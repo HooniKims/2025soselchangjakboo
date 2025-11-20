@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 소설창작부 풋내기 글잔치</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ebook-container">
+        <!-- 표지 -->
+        <div class="page cover-page" data-page="cover">
+            <div class="cover-content">
+                <img src="로맨스 전자책 표지.png" alt="로맨스 전자책 표지" class="cover-image">
+            </div>
+        </div>
+
+        <!-- 목차 페이지 -->
+        <div class="page toc-page" data-page="toc">
+            <div class="page-content">
+                <h1 class="toc-title">목차</h1>
+                <nav class="table-of-contents">
+                    <ul>
+                        <li><a href="#" data-story="1">1. 시간우체통 - 곽민서</a></li>
+                        <li><a href="#" data-story="2">2. 二 - 김도연(2반)</a></li>
+                        <li><a href="#" data-story="3">3. 일주일 - 김우성</a></li>
+                        <li><a href="#" data-story="4">4. 크리스마스의 기적 - 김도연(3반)</a></li>
+                        <li><a href="#" data-story="5">5. 🌸 이야기 - 심서율</a></li>
+                        <li><a href="#" data-story="6">6. Creepy Smile - 고은준</a></li>
+                        <li><a href="#" data-story="7">7. 폐교의 그림자 - 박지환</a></li>
+                        <li><a href="#" data-story="8">8. 그림자의 밤 - 궉민아</a></li>
+                        <li><a href="#" data-story="9">9. 라이벌 - 신인수</a></li>
+                        <li><a href="#" data-story="10">10. 노을 그리고, 달 - 오민규</a></li>
+                        <li><a href="#" data-story="11">11. 명호지야(冥呼之夜) - 김가은</a></li>
+                        <li><a href="#" data-story="12">12. 오늘은 6월 14일 - 김연지</a></li>
+                        <li><a href="#" data-story="13">13. 랜과 밴드 - 한신</a></li>
+                        <li><a href="#" data-story="14">14. 거울 속의 나 - 문소희</a></li>
+                        <li><a href="#" data-story="15">15. 종소리 - 장연재</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- 본문 페이지들 -->
+        <div id="story-pages"></div>
+
+        <!-- 뒤표지 -->
+        <div class="page back-cover-page" data-page="back">
+            <div class="page-content">
+                <div class="back-cover-content">
+                    <h2>감사합니다</h2>
+                    <p>읽어주셔서 감사합니다.</p>
+                    <p class="copyright">© 2025 소설창작부 풋내기 글잔치</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 네비게이션 -->
+    <div class="navigation">
+        <button id="prevBtn" class="nav-btn">
+            <span>◀</span>
+        </button>
+        <div class="page-indicator">
+            <span id="currentPage">1</span> / <span id="totalPages">1</span>
+        </div>
+        <button id="nextBtn" class="nav-btn">
+            <span>▶</span>
+        </button>
+    </div>
+
+    <!-- 홈 버튼 -->
+    <button id="homeBtn" class="home-btn" title="목차로 돌아가기">
+        <span>☰</span>
+    </button>
+
+    <!-- 로딩 인디케이터 -->
+    <div id="loadingIndicator" class="loading-indicator">
+        <div class="spinner"></div>
+        <p>소설을 불러오는 중...</p>
+    </div>
+
+    <script src="stories.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
