@@ -29,7 +29,8 @@ class EBook {
             { id: 12, title: "오늘은 6월 14일", author: "김연지", file: "12.김연지.txt", image: "image/compressed/12.김연지.png" },
             { id: 13, title: "랜과 밴드", author: "한신", file: "13.한신.txt", image: "image/compressed/13.한신.jpeg" },
             { id: 14, title: "거울 속의 나", author: "문소희", file: "14.문소희.txt", image: "image/compressed/14.문소희.jpeg" },
-            { id: 15, title: "종소리", author: "장연재", file: "15.장연재.txt", image: "image/compressed/15.장연재.png" }
+            { id: 15, title: "종소리", author: "장연재", file: "15.장연재.txt", image: "image/compressed/15.장연재.png" },
+            { id: 16, title: "봄을 건너, 너에게", author: "백시아", file: "16.백시아.txt", image: "image/compressed/16.백시아.jpeg" }
         ];
     }
 
